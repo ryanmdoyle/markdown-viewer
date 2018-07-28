@@ -6,6 +6,11 @@ html {
 
 }
 
+a {
+  color: #474A4F;
+  text-decoration: none;
+}
+
 textarea {
   display: relative;
   width: 99%;
@@ -26,8 +31,8 @@ textarea {
   height: 90vh;
   width: 95vw;
 
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 40% auto;
   grid-gap: 0.5vh 0.5vh;
   grid-template-areas: 
     "controls input" 
@@ -48,14 +53,35 @@ textarea {
 
 #controls {
   grid-area: controls;
+  min-height: 50%;
 
 }
 
 #input {
   grid-area: input;
-
+  min-height: 50%;
 }
 
 #display {
   grid-area: display;
+}
+
+@media (max-width: 800px) {
+  .grid-container {
+    display: grid;
+    margin: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    height: 95vh;
+    width: 98vw;
+  
+    grid-template-columns: auto;
+    grid-template-rows: 21% 30% auto;
+    grid-gap: 0.5vh 0.5vh;
+    grid-template-areas: 
+      "controls"
+      "input" 
+      "display"; 
+  }
+  
 }

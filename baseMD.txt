@@ -1,0 +1,42 @@
+This is a header
+===========
+
+This is a sub-header
+---------------------
+
+Here is a link to my [codepen] (https://codepen.io/ryanmdoyle) and my 
+[github] (https://github.com/ryanmdoyle).
+
+`<p> this is an example of inline code </p>`
+
+
+```
+
+    This is an example of a multiline code:
+
+    updateDisplay(event) {
+    
+        this.setState({
+          display: markdown.toHTML(event.target.value)
+        })
+      }
+
+```
+
+You can make an unordered list:
+
+- One Item
+- Two Items
+
+Or ordered list:
+
+1. First thing
+2. second thing
+
+Make text _italic_ or **bold**.
+
+> Isn't this a great blockquote!
+
+Mostly made with:
+
+![React image](https://blog.zenika.com/wp-content/uploads/2015/02/vignette_react.jpg)
